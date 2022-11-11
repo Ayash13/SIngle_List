@@ -10,4 +10,11 @@ namespace Single_List
         public string name;
         public Node next;
     }
+
+    class List
+    {
+        Node START;
+        
+        
+    }
 }
