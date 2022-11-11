@@ -120,7 +120,12 @@ namespace Single_List
     }
     class Program
     {
-       
+        // Check wheter the specified node is present in the list or not
+
+        static void Main(string[] args)
+        {
+             
+        }
     }
     
 }
