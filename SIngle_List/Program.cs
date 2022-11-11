@@ -82,7 +82,18 @@ namespace Single_List
 
            
         }
-       
+        public bool delNote(int nim)
+        {
+            Node previous, current;
+            previous = current = null;
+            //Check if the specified node is the list or not
+            if (Search(nim, ref previous, ref current) == false)
+                return false;
+            previous.next = current.next;
+            if (current == START)
+                START = current.next;
+            return true;
+        }
     }
     
 }
