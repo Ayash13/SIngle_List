@@ -15,6 +15,9 @@ namespace Single_List
     {
         Node START;
         
-        
+        public List()
+        {
+            START = null;
+        }
     }
 }
