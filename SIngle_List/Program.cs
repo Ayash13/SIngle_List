@@ -34,7 +34,7 @@ namespace Single_List
             //if the node to be inserted is the fisrt node
             if (START == null || nim <= START.rollNumber)
             {
-                if((START != null) && (nim <= START.rollNumber))
+                if((START != null) && (nim == START.rollNumber))
                 {
                     Console.WriteLine("Duplicate roll number of allowed");
                 }
@@ -42,6 +42,25 @@ namespace Single_List
             newnode.next = START;
             START = newnode;
             return;
+
+            //Locate the position of the new node in the list
+
+            Node previous, current;
+            previous = START;
+            current = START;
+
+            while ((current != null) && (nim >= current.rollNumber))
+            {
+                if (nim == current.rollNumber)
+                {
+                    Console.WriteLine("Duplicate rill numbers not allowed");
+                    return;
+
+                }
+                previous = current;
+                current = current.next;
+            }
+
         }
     }
 }
