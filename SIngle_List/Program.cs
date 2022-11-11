@@ -118,5 +118,9 @@ namespace Single_List
                 return false;
         }
     }
+    class Program
+    {
+       
+    }
     
 }
