@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Single_List
 {
@@ -61,6 +62,27 @@ namespace Single_List
                 current = current.next;
             }
 
+            //Once the above for loop is executed, previous and current are positional is such a way that the position for the new node
+            newnode.next = current;
+            previous.next = newnode;
         }
+        public void traverse()
+        {
+            if (ListEmpty())
+                Console.WriteLine("List is empty");
+            else
+            {
+                Console.WriteLine("The records in the list area");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + " " + currentNode.name + " ");
+                Console.WriteLine();
+               
+            }
+
+           
+        }
+       
     }
+    
 }
