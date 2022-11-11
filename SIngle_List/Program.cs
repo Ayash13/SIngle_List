@@ -19,5 +19,12 @@ namespace Single_List
         {
             START = null;
         }
+
+        public void addNote() //add a node in the list
+        {
+            int nim;
+            string nm;
+           
+        }
     }
 }
