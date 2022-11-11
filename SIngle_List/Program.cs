@@ -6,6 +6,8 @@ namespace Single_List
 
     class Node
     {
-
+        public int rollNumber;
+        public string name;
+        public Node next;
     }
 }
