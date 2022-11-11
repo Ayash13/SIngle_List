@@ -31,7 +31,17 @@ namespace Single_List
             Node newnode = new Node();
             newnode.rollNumber = nim;
             newnode.name = nm;
-            
+            //if the node to be inserted is the fisrt node
+            if (START == null || nim <= START.rollNumber)
+            {
+                if((START != null) && (nim <= START.rollNumber))
+                {
+                    Console.WriteLine("Duplicate roll number of allowed");
+                }
+            }
+            newnode.next = START;
+            START = newnode;
+            return;
         }
     }
 }
